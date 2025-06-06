@@ -1,0 +1,18 @@
+
+using Xunit;
+
+namespace AnneesBissextiles.Test
+{
+  public class CalendrierGregorienTest
+    {  [Fact]
+        public void Annee2023_NeEstPasBissextile()
+        {  Assert.False(CalendrierGregorien.EstBissextile(2023));
+        }
+
+        [Fact]
+        public void AnneeZero_DoitDeclencherException()
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(() => CalendrierGregorien.EstBissextile(0));
+        }
+    }
+}
