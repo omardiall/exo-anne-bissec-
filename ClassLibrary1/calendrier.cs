@@ -22,10 +22,7 @@ namespace space AnneesBissextiles{
 			return true;
 		}
 		else
-		{
-			return ;
-
-		}
+		{ return ; }
 
 
 	}
